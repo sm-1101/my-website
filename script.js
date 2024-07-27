@@ -61,8 +61,8 @@ document.addEventListener('DOMContentLoaded', () => {
         context.fillStyle = '#fff';
         context.textAlign = 'center';
         context.textBaseline = 'top';
-        context.fillText(`Left Player: ${leftScore}`, canvas.width / 4, 10);
-        context.fillText(`Right Player: ${rightScore}`, (3 * canvas.width) / 4, 10);
+        context.fillText(`Player 1:  ${leftScore}`, canvas.width / 4, 10);
+        context.fillText(`Player 2:  ${rightScore}`, (3 * canvas.width) / 4, 10);
     }
 
     // Move ball
