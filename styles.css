@@ -43,8 +43,8 @@ main {
     padding: 20px;
     flex: 1;
     box-sizing: border-box;
-    margin-left: 75px;
-    margin-right: 75px;
+    margin-left: 100px;
+    margin-right: 100px;
     
 }
 
@@ -53,7 +53,7 @@ footer {
     background-color: #6b3838;
     color: #fff;
     text-align: right;
-    padding: 0.5em 0;
+    padding: 0.2em 0;
     position: relative;
     margin-top: auto;
     z-index: 2;
@@ -69,7 +69,7 @@ canvas {
 }
 
 .left-border, .right-border {
-    width: 75px;
+    width: 100px;
     background-color: #080707;
     padding: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -90,4 +90,31 @@ canvas {
 .right-border {
     margin-left: 20px;
     right: 0;
+}
+
+.left-border img, .right,border img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    main {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .left-border, .right-border {
+        position: static;
+        width: 100%;
+        padding: 0;
+    }
+
+    .left-border img, .right-border img {
+        display: none;
+    }
 }
